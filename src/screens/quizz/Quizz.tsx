@@ -79,7 +79,7 @@ const Quizz = () => {
     <Stack style={{ height: "100%" }}>
       <View height={Platform.OS == "android" ? 0 : 44} bg="#3D7944" />
       <View style={styles.container}>
-        <Text style={styles.text_main}>ZOODY'S QUIZ</Text>
+        <Text style={styles.text_main}>ANATONY'S QUIZ</Text>
         <Text style={styles.text_level}>Level: {show[level]}</Text>
         <Image
           style={{

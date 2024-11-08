@@ -20,8 +20,8 @@ export default function HomeStack() {
   return (
     <Stack.Navigator initialRouteName="Home">
       <Stack.Screen name="HomeScreen" component={Home} options={{ headerShown: false }} />
-      <Stack.Screen name="Category" component={Category} options={{ headerShown: false }} />
-      <Stack.Screen name="MemberDetail" component={MemberDetail} options={{ headerShown: false }} />
+      <Stack.Screen name="Category" component={Category} options={{ headerShown: true }} />
+      <Stack.Screen name="MemberDetail" component={MemberDetail} options={{ headerShown: true }} />
     </Stack.Navigator>
   )
 }

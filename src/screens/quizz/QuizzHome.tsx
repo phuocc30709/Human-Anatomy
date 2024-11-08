@@ -27,7 +27,7 @@ const QuizzHome = () => {
     <Stack style={{ height: "100%" }}>
       <StatusBar barStyle="dark-content" />
       <View style={styles.container}>
-        <Text style={styles.textmain}>Biotolofy’s quiz</Text>
+        <Text style={styles.textmain}>Anatomy’s quiz</Text>
         {levels.map((info) => (
           <TouchableOpacity
             style={styles.box}

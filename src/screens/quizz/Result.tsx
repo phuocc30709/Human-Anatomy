@@ -19,7 +19,7 @@ const Result = () => {
   
   return (
     <View style={styles.bg}>
-      <Text style={styles.text__main}>Biotolofy’s quiz</Text>
+      <Text style={styles.text__main}>Anatomy’s quiz</Text>
       <Text style={styles.text__level}>Level: {show[level]}</Text>
       <View style={styles.container}>
         <Text style={styles.text__comment}>GREAT JOB</Text>

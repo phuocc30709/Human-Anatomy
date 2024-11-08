@@ -20,7 +20,7 @@ const PracticeHome = () => {
     <Stack style={{ height: '100%', backgroundColor: '#F5F5F5' }}>
       <StatusBar barStyle="dark-content" />
       <View style={styles.container}>
-        <Text style={styles.textmain}>PRACTICE WITH ZOODY</Text>
+        <Text style={styles.textmain}>PRACTICE WITH ANATONY</Text>
         {levels.map((info) => (
           <TouchableOpacity
             style={styles.box}

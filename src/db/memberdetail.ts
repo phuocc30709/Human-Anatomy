@@ -1,6 +1,4 @@
 import { MemberImageProps } from "../components/MemberImage";
-import { PartSummaryProps } from "../components/PartSummary";
-import { ImageSourcePropType } from "react-native";
 
 export interface MemberDetailData {
   [key: string]: {

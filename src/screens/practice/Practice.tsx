@@ -18,19 +18,17 @@ const Practice = () => {
 
   const route = useRoute<any>()
   const navigation = useNavigation<any>()
-  const [currQues] = useState(0)
+  const [currQues, setCurrQues] = useState(0)
   const level: string = route.params.level ? route.params.level : 'easy'
   const [correct, setCorrect] = useState<boolean | null>(null)
-
-  // const [typedWord, setTypedWord] = useState('')
+  const [inputKey, setInputKey] = useState(0) 
 
   const onChange = (data: any) => {
-    const ans = practiceData[level][currQues].ans
+    const ans = practiceData[level][currQues].ans;
     if (data.wordString.length == ans.length) {
       const ansText = ans.join('')
       setCorrect(ansText === data.wordString)
     } else {
-      // setTypedWord(data.wordString);
       setCorrect(null)
     }
   }
@@ -48,7 +46,7 @@ const Practice = () => {
     <Stack style={styles.container}>
       {Platform.OS == 'android' && <StatusBar barStyle="light-content" />}
       <View style={styles.header}>
-        <Text style={styles.text_main}>PRACTICE WITH ZOODY</Text>
+        <Text style={styles.text_main}>PRACTICE WITH ANATONY</Text>
         <Text style={styles.text_level}>Level: {show[level]}</Text>
       </View>
       <View style={styles.main}>
@@ -56,6 +54,7 @@ const Practice = () => {
       </View>
       <View style={styles.box__choose}>
         <QuizInput
+          key={inputKey} 
           size="large"
           borderColor="#3D7944"
           wordStructure={practiceData[level][currQues].ans.map(() => true)}
@@ -66,7 +65,16 @@ const Practice = () => {
         <Button
           style={styles.btn}
           key={level}
-          onPress={() => navigation.navigate('PracticeResultScreen', { level: level })}
+          onPress={() => {
+            if (correct) {
+              setCurrQues(currQues + 1)
+              setCorrect(null)
+              setInputKey(inputKey + 1) 
+              if (currQues == practiceData[level].length - 1) {
+                navigation.navigate('PracticeResultScreen', { level: level })
+              }
+            }
+          }}
         >
           <Text style={{ color: '#3D7944' }}>Continue</Text>
         </Button>
