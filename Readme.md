@@ -21,5 +21,5 @@ The app is compatible with both iOS and Android devices.
 ## [Installation](https://drive.google.com/file/d/1InLIHxG_A2SMXYC8bMfvmKvZ0uMRdXOm/view?usp=sharing/)
 
 ## Demo
-[![Xem video](./assets/images/screens/image.png)](https://firebasestorage.googleapis.com/v0/b/food-donation-98ef2.appspot.com/o/Simulator%20Screen%20Recording%20-%20iPhone%2015%20Pro%20Max%20-%202024-11-05%20at%2018.32.27.mp4?alt=media&token=744e9288-cd34-4ffc-a180-02351ec413b0)# human-anatomy
-# Human-Anatomy
+[![Xem video](./assets/images/screens/image.png)](https://firebasestorage.googleapis.com/v0/b/food-donation-98ef2.appspot.com/o/Simulator%20Screen%20Recording%20-%20iPhone%2015%20Pro%20Max%20-%202024-11-05%20at%2018.32.27.mp4?alt=media&token=744e9288-cd34-4ffc-a180-02351ec413b0)
+
